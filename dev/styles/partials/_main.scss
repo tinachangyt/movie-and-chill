@@ -1,0 +1,145 @@
+//MAIN STYLE STARTS MAIN STYLE STARTS
+.movieCatalogue__movies {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.movieInfo {
+	vertical-align: top;
+	background-image: linear-gradient(to bottom, $primaryColour 0%, $primaryColour 45px, white 45px, white 100%);
+	padding: 8px 15px 20px 15px;
+	box-shadow: 1px 1px 20px 1px grey;
+	margin: 2%;
+	width: 250px;
+	.icons {
+		font-size: 1.1rem;
+		margin-bottom: 7px;
+		display:flex;
+		justify-content: space-between;
+		padding: 7px 10px;
+		a {
+			text-decoration: none;
+			color: black;
+			transition: all 0.2s;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	.selectIcon {
+		justify-content: flex-end;
+	}
+	.movieInfo__image {
+		width: 210px;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+	.movieInfo__details {
+		font-size: 1rem;
+		.mediaType, .rating {
+			margin: 5px 0 15px 0;
+			color: $primaryColour;
+			font-weight: 300;
+		}
+		.movieInfo__details--title {
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+}
+
+#selectedSection .mediaType {
+	margin: 10px 0 0 0;
+}
+
+.noteForm {
+	font-size: 0.9rem;
+	textarea {
+		width: 100%;
+		height: 50px;
+		padding: 5px;
+		margin-bottom: 13px;
+	}
+	.fa {
+		font-size: 1.1rem;
+		margin-right: 4px;
+	}
+	label, 
+	.range-slider label, 
+	.noteWatchedTime {
+		margin: 16px 10px 25px 0;
+		color: $primaryColour;
+		font-weight: 300;
+	}
+	.noteWatchedTime {
+		color: black;
+		width: 116px;
+		margin-right: 0px;
+		padding: 5px;
+		border: 1px solid grey;
+	}
+	.saveButton {
+		display: block;
+		margin-top: 5px;
+		border: none;
+		border-radius: 3px;
+		font-size: 1rem;
+		background: $primaryColour;
+		color: white;
+		padding: 5px 10px;
+		transition: all 0.2s;
+		&:hover {
+			background: #e6ad00;
+		}
+		&:active {
+			transform: scale(0.95);
+		}
+	}
+}
+
+//RANGE SLIDER FOR USER MOVIE RATING STARTS
+.range-slider {
+  position: relative;
+  .range-slider__range {
+  	margin-top: 10px;
+  }
+}
+
+input[type=range] {
+  display: block;
+  width: 100%;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  position: relative;
+  height: 8px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  position: relative;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  // border: 1px solid #999;
+  -webkit-appearance: none;
+  background-color: $primaryColour;
+  box-shadow: inset 0 -1px 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+input[type=range]:active + output {
+  display: block;
+  transform: translateX(-50%);
+}
+//RANGE SLIDER FOR USER MOVIE RATING ENDS
+
+//MAIN STYLE ENDS MAIN STYLE ENDS

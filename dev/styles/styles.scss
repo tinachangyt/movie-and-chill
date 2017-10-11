@@ -1,0 +1,61 @@
+$primaryColour: #ffc000;
+$primaryFont: 'Raleway', sans-serif;
+@import 'partials/setup';
+@import 'partials/header';
+@import 'partials/main';
+
+
+
+
+// GENERAL STYLE STARTS GENERAL STYLE STARTS
+body {
+	// background: white;
+	background: #111828;
+	font-family: $primaryFont;
+	font-weight: 100;
+	font-size: 10px;
+}
+
+.headerWrapper {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+textarea, input, button { 
+	outline: none; 
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 100;
+	color: $primaryColour;
+	margin-top: 200px;
+}
+
+img {
+	width: 100%;
+}
+// GENERAL STYLE ENDS GENERAL STYLE ENDS
+
+
+
+
+
+//FOOTER STYLE STARTS FOOTER STYLE STARTS
+footer p {
+	font-size: 1rem;
+	font-weight: 300;
+	margin: 100px 0 20px 0;
+	text-align: center;
+	color: $primaryColour;
+}
+//FOOTER STYLE ENDS FOOTER STYLE ENDS

@@ -1,0 +1,168 @@
+//HEADER STYLE STARTS HEADER STYLE STARTS
+header {
+	color: white;
+	background: linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../../assets/movieTheatre.jpg) no-repeat fixed;
+	background-size: cover;
+	height: 100vh;
+	margin-bottom: 150px;
+	.logo {
+		margin: 0 auto;
+		display: block;
+		max-width: 700px;
+		padding-top: 80px;
+	}
+}
+
+.startPage {
+	position: absolute;
+	top: 69%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 700px;
+}
+
+.startPage__appIntro {
+	color: white;
+	font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+	line-height: 25px;
+	margin-bottom: 4%;
+	p {
+		text-align: center;
+		margin: 0;
+	}
+}
+
+.startPage__loginButton {
+	font-size: 1.3rem;
+	padding:10px 25px;
+	display: block;
+	margin: 0 auto;
+	&:hover {
+		padding:10px 50px;
+	}
+}
+
+.topButton, .startPage__loginButton, .logoutButton, .search__bar {
+	color: white;
+	border: 1px solid white;
+	background: none;
+	border-radius: 7px;
+}
+
+.topButton, .startPage__loginButton, .logoutButton, .search .search__bar {
+	font-weight: lighter;
+	box-shadow: 1px 1px 8px 1px grey;
+	transition: all 0.2s;
+	&:hover {
+		background: $primaryColour;
+		border: 1px solid $primaryColour;
+	}
+}
+
+.topButton {
+	text-align: center;
+	position: fixed;
+	top: 70%;
+	left: 20px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	p {
+		font-size: 0.9rem;
+		margin-top: 12px;
+	}
+	.fa-arrow-up {
+		font-size: 1.5rem;
+		text-align: center;
+		display: block;
+		padding-top: 7px;
+	}
+}
+
+.logoutButton {
+	font-size: 1.1rem;
+	padding:8px 15px;
+	position: absolute;
+	top: 3%;
+	right: 2%;
+}
+
+.search {
+	display: inline-block;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.2rem;
+	.search__bar {
+		width: 270px;
+		height: 30px;
+		padding: 13px 45px 13px 20px;
+		color: white;
+		box-shadow: 1px 1px 15px 1px grey;
+		font-weight: 300;
+		transition: all 0.2;
+		&:focus {
+			background: $primaryColour;
+			color: black;
+		}
+	}
+	.search__submitButton {
+		background: none;
+		border: none;
+		position: absolute;
+		right: 10px;
+		top: 22%;
+		font-size: 1.4rem;
+		.fa-search {
+			color: white;
+			transition: all 0.2s;
+			&:hover {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.startPage {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 660px) {
+	.startPage {
+		max-width: 400px;
+		top: 62%;
+	}
+	.startPage__appIntro {
+		margin-bottom: 18%;
+	}
+}
+
+@media (max-width: 530px) {
+	header img.logo {
+		padding-top: 150px;
+	}
+	.startPage {
+		max-width: 300px;
+	}
+	.topButton {
+		top: 65%;
+		left: 10px;
+	}
+	.search .search__bar {
+		width: 200px;
+	}
+}
+
+@media (max-width: 330px) {
+	header img.logo {
+		padding-top: 120px;
+	}
+	.topButton {
+		top: 86%;
+	}
+}
+//HEADER STYLE ENDS HEADER STYLE ENDS
